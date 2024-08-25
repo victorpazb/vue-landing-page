@@ -16,6 +16,7 @@ import DownloadSection from '../sections/DownloadSection.vue';
 import ProjectSection from '../sections/ProjectsSection.vue';
 import ContactSection from '../sections/ContactSection.vue';
 
+
 </script>
 
 <style scoped>
