@@ -22,7 +22,7 @@
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#education" v-smooth-scroll>{{ content.title.experience[selectedLang] }}</a></li>
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#projects" v-smooth-scroll>{{ content.title.projects[selectedLang] }}</a></li>
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#contacts" v-smooth-scroll>{{ content.title.contacts[selectedLang] }}</a></li>
-                
+
                 </ul>
 
 
@@ -132,25 +132,18 @@
         mobileNav.value = !mobileNav.value
     }
     let currentLanguage = localStorage.getItem('language') || 'pt';
-    const selectedLanguage = ref(localStorage.getItem('language').language) || ref('pt');
+    const selectedLanguage = ref(localStorage.getItem('language')?.value) || ref('pt');
 
     //TODO: Things here are no longer necessary. Remove it! 
     watch(selectedLanguage, (newValue, oldValue) => {
         localStorage.setItem('language', selectedLanguage.value);
         currentLanguage = localStorage.getItem('language') || 'pt';
-        console.log("HEADER", currentLanguage);
-
-        
         langStore.setLanguage(selectedLanguage.value);
-        console.log("HIAS<><><><><>HDASD", langStore.selectedLanguage);
-
-        
     });
 
     onMounted(() => {
         const storedLanguage = localStorage.getItem('language') || 'pt';
         selectedLanguage.value = storedLanguage;
-        console.log("INITIAL LANG", selectedLanguage.value);
     });
 
     const selectedLang = computed(() => {
