@@ -131,20 +131,15 @@
     let toggleMobileNav = () => {
         mobileNav.value = !mobileNav.value
     }
-    let currentLanguage = localStorage.getItem('language') || 'pt';
-    const selectedLanguage = ref(localStorage.getItem('language')?.value) || ref('pt');
+    let selectedLanguage = ref('pt');
 
     //TODO: Things here are no longer necessary. Remove it! 
     watch(selectedLanguage, (newValue, oldValue) => {
-        localStorage.setItem('language', selectedLanguage.value);
-        currentLanguage = localStorage.getItem('language') || 'pt';
-        langStore.setLanguage(selectedLanguage.value);
+      console.log("THE LANG BEFORE WAS: ", langStore.selectedLanguage);
+      langStore.setLanguage(selectedLanguage.value);
+      console.log("THE LANG NOW IS: ", langStore.selectedLanguage);
     });
 
-    onMounted(() => {
-        const storedLanguage = localStorage.getItem('language') || 'pt';
-        selectedLanguage.value = storedLanguage;
-    });
 
     const selectedLang = computed(() => {
         return langStore.selectedLanguage == 'en' ? 'en' : 'pt';

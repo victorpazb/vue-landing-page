@@ -15,19 +15,6 @@ import FeatureSection from '../sections/FeatureSection.vue';
 import DownloadSection from '../sections/DownloadSection.vue';
 import ProjectSection from '../sections/ProjectsSection.vue';
 import ContactSection from '../sections/ContactSection.vue';
-import { useLanguageStore } from '../stores/useLanguageStore';
-
-  
-const langStore = useLanguageStore();
-
-
-watch(() => langStore.selectedLanguage, (newLanguage) => {
-  console.log('Idioma mudou para:', langStore.selectedLanguage);
-});
-
-onMounted(() => {
-  console.log("SELECTED IN MAIN", langStore.selectedLanguage);       
-});
 
 </script>
 
