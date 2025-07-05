@@ -48,10 +48,10 @@ const content = ref({
     titles: {
         pt: ['Cientista da computação', 'Desenvolvedor de Software Fullstack'],
         en: [ 'Computer Scientist', 'Fullstack software developer'],
-    },
-    description : { 
-        pt: 'Sou um estudante de Engenharia de Software em Ciência da Computação no Brasil, com previsão de formatura em outubro de 2024. Minha carreira começou como Estagiário de Frontend, onde desenvolvi habilidades fundamentais, e desde então transitei para o desenvolvimento full‐stack. Atualmente, trabalho como Desenvolvedor de Software Júnior, focado em criar interfaces amigáveis e APIs REST eficientes usando Vue.js, Quasar, TypeScript, Node.js e MongoDB. Sou dedicado a ser um membro de equipe colaborativo, cumprir objetivos e manter uma atitude positiva.',
-        en: 'I am a Brazilian software engineering undergraduate in Computer Science, set to graduate in October 2024. My career started as a Frontend Intern, where I built foundational skills, and I have since transitioned to full‐stack development. Currently, I work as a Junior Software Developer, focusing on creating user‐friendly interfaces and efficient REST APIs using Vue.js, Quasar, TypeScript, Node.js, and MongoDB. I am dedicated to being a supportive team member, meeting objectives, and maintaining a positive attitude.',
+    },  
+    description: {
+        pt: 'Sou bacharel em Ciência da Computação, com mais de 3 anos de experiência de mercado, e atualmente trabalho como Desenvolvedor de Sistemas em uma multinacional. Atuo na criação de automações em Python, com foco em otimizar processos e facilitar o dia a dia das operações dos nossos clientes. Além das automações, trabalhamos com ferramentas de inteligência artificial que ampliam a eficiência das soluções, simplificam sua construção e manutenção, e aumentam suas possibilidades de uso. Tenho paixão por resolver problemas de forma inteligente, colaborando com equipes e mantendo sempre uma atitude positiva.',
+        en: 'I hold a bachelor’s degree in Computer Science, with over 3 years of industry experience, and currently work as a Systems Developer at a multinational company. I develop Python-based automations aimed at streamlining processes and improving the operational efficiency for our clients. Our work also involves AI tools that enhance the performance of our solutions, simplify their development and maintenance, and expand their use cases. I’m passionate about solving problems intelligently, working collaboratively, and maintaining a positive attitude.'
     }
 });
 

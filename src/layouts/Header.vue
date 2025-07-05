@@ -22,14 +22,14 @@
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#education" v-smooth-scroll>{{ content.title.experience[selectedLang] }}</a></li>
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#projects" v-smooth-scroll>{{ content.title.projects[selectedLang] }}</a></li>
                     <li class="uppercase hover:text-theme-secondary transition duration-200"><a href="#contacts" v-smooth-scroll>{{ content.title.contacts[selectedLang] }}</a></li>
-
+                
                 </ul>
 
 
                 <!--THIS IS THE ENG CV-->
                 <!--TODO: fix the links in DRIVE and put it here!-->
                 <li class="ml-10 uppercase flex justify-center bg-theme-secondary px-6 py-2 text-white rounded shadow-md hover:bg-white border-2 border-transparent hover:border-theme-secondary hover:text-theme-secondary cursor-pointer transition duration-200 ml-10">
-                        <a :href="content.cv_url[selectedLang]">{{ langStore.selectedLanguage == 'en' ? 'Download cv' : 'Baixar cv'}}</a>
+                        <a :href="content.cv_url[selectedLang]">{{langStore.selectedLanguage == 'en' ? 'Download cv' : 'Baixar cv'}}</a>
                 </li>
             
                 <div class="select-container">
@@ -63,6 +63,9 @@
                     <li class="hover:text-theme-secondary transition duration-200 py-4 border-b border-theme-grayish-blue w-full text-center">
                         <a  @click="toggleMobileNav()" href="#subscribe">Contato</a>
                     </li>
+                    <!-- <li class="bg-transparent border-2 rounded px-6 py-2 mt-6 w-full text-center cursor-pointer hover:text-theme-secondary transition duration-200">
+                        <a  @click="toggleMobileNav()" href="#download-section">Download</a>
+                    </li> -->
                 </ul>
                 <div class="flex justify-center items-end h-52">
                     <ul class="flex space-x-8">
@@ -86,8 +89,9 @@
 </template>
 
 <script setup>
-    import { onMounted, ref, watch, computed } from 'vue';
+    import { onMounted, ref, watch } from 'vue';
     import { useLanguageStore } from '../stores/useLanguageStore';
+    import { computed } from 'vue';
 
 
     const langStore = useLanguageStore();
@@ -97,7 +101,7 @@
         title: {
             education: {
                 en: 'Educaiton',
-                pt: 'Formação',
+                pt: 'Fomração',
             },
             experience: {
                 en: 'Experience',
@@ -105,7 +109,7 @@
             },
             projects: {
                 en: 'Projects',
-                pt: 'Projetos',
+                pt: 'Projectos',
             },
             contacts: {
                 en: 'Contacts',
@@ -115,26 +119,43 @@
 
         cv_url: {
             //LAST UPDATE: Aug, 24, 2024.
-            en: 'https://drive.usercontent.google.com/uc?id=1iEDKbsI7XUfMudZROs4U4sbH4JvST2lk&export=download',
-            pt: 'https://drive.usercontent.google.com/uc?id=1bwBBLbaNw4TpGYLmg9a3X1u0lODRCyXy&export=download',
+            en: "https://drive.usercontent.google.com/u/0/uc?id=1EuXmgvmlYJtjhFf3juslDwwQQurGCChp&export=download",
+            pt: "https://drive.usercontent.google.com/uc?id=1qefxBOAay1-GZInZTPo-F6oaohAdWqSV&export=download"
+
         }
 
     });
+
+    
 
     let mobileNav = ref(false);
     let toggleMobileNav = () => {
         mobileNav.value = !mobileNav.value
     }
+    let currentLanguage = localStorage.getItem('language') || 'pt';
+    const selectedLanguage = ref(localStorage.getItem('language').language) || ref('pt');
 
-    let selectedLanguage = ref('pt');
     //TODO: Things here are no longer necessary. Remove it! 
     watch(selectedLanguage, (newValue, oldValue) => {
-      console.log("THE LANG BEFORE WAS: ", langStore.selectedLanguage);
-      langStore.setLanguage(selectedLanguage.value);
-      console.log("THE LANG NOW IS: ", langStore.selectedLanguage);
+        localStorage.setItem('language', selectedLanguage.value);
+        currentLanguage = localStorage.getItem('language') || 'pt';
+        console.log("HEADER", currentLanguage);
+
+        
+        langStore.setLanguage(selectedLanguage.value);
+        console.log("HIAS<><><><><>HDASD", langStore.selectedLanguage);
+
+        
     });
+
+    onMounted(() => {
+        const storedLanguage = localStorage.getItem('language') || 'pt';
+        selectedLanguage.value = storedLanguage;
+        console.log("INITIAL LANG", selectedLanguage.value);
+    });
+
     const selectedLang = computed(() => {
-        return langStore.selectedLanguage === 'en' ? 'en' : 'pt';
+        return langStore.selectedLanguage == 'en' ? 'en' : 'pt';
     });
     
 </script>

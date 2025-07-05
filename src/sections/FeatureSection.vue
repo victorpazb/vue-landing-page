@@ -16,9 +16,10 @@ const content = ref({
     pt: 'Formação',
   },
   description: {
-    en: 'I\'m finishing my bachelor\'s degree in Computer Science at the Federal University of Campina Grande (UFCG), one of Brazil\'s most renowned institutions in the field of technology. UFCG is nationally and internationally recognized for its academic excellence and rigorous curriculum, producing highly qualified professionals for the industry.',
-    pt: 'Estou concluindo o curso superior de Computação na Universidade Federal de Campina Grande (UFCG), uma das mais renomadas instituições do Brasil na área de tecnologia. A UFCG é reconhecida nacional e internacionalmente pela excelência acadêmica e por seu rigoroso programa de ensino, preparando profissionais altamente qualificados para o mercado.',
-  },
+  en: 'I hold a bachelor\'s degree in Computer Science from the Federal University of Campina Grande (UFCG), one of Brazil\'s most renowned institutions in the field of technology. UFCG is nationally and internationally recognized for its academic excellence and rigorous curriculum, consistently preparing highly qualified professionals for the industry.',
+  pt: 'Sou bacharel em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG), uma das instituições mais renomadas do Brasil na área de tecnologia. A UFCG é reconhecida nacional e internacionalmente pela excelência acadêmica e por seu currículo rigoroso, formando profissionais altamente qualificados para o mercado.'
+  }
+  ,
   institution: {
     en: 'Federal University of Campina Grande',
     pt: 'UFCG - Universidade Federal de Campina Grande'
