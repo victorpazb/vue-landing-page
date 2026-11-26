@@ -10,3 +10,6 @@
 
 ## Screenshot
 ![vue-landing-page](screenshot.png)
+
+
+## THANK YOU!
