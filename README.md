@@ -12,4 +12,4 @@
 ![vue-landing-page](screenshot.png)
 
 
-## THANK YOU! BOTH
+## THANK YOU! BOTH!
