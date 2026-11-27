@@ -32,4 +32,4 @@ If the `github-pages` environment has a branch restriction, allow `main` in
 ![vue-landing-page](screenshot.png)
 
 
-## THANK YOU! BOTH
+## THANK YOU! BOTH!
