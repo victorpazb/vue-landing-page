@@ -16,12 +16,13 @@ const content = ref({
     pt: 'Formação',
   },
   description: {
-  en: 'I hold a bachelor\'s degree in Computer Science from the Federal University of Campina Grande (UFCG), one of Brazil\'s most renowned institutions in the field of technology. UFCG is nationally and internationally recognized for its academic excellence and rigorous curriculum, consistently preparing highly qualified professionals for the industry.',
-  pt: 'Sou bacharel em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG), uma das instituições mais renomadas do Brasil na área de tecnologia. A UFCG é reconhecida nacional e internacionalmente pela excelência acadêmica e por seu currículo rigoroso, formando profissionais altamente qualificados para o mercado.'
+    en: 'I am a Software Engineer with a bachelor\'s degree in Computer Science from the Federal University of Campina Grande (UFCG) and over three years of professional experience. My background combines backend and fullstack development with automation, observability, and cloud computing. I focus on building reliable, scalable, and maintainable solutions that address real business challenges. My experience working with international and multidisciplinary teams has also strengthened my technical autonomy, adaptability, and collaborative approach to software engineering.',
+
+    pt: 'Sou Engenheiro de Software, bacharel em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG), com mais de três anos de experiência profissional. Minha trajetória combina desenvolvimento backend e fullstack com automação, observabilidade e computação em nuvem. Meu foco está na construção de soluções confiáveis, escaláveis e de fácil manutenção, capazes de resolver desafios reais de negócio. A experiência com equipes internacionais e multidisciplinares também fortaleceu minha autonomia técnica, capacidade de adaptação e abordagem colaborativa à engenharia de software.'
   }
   ,
   institution: {
-    en: 'Federal University of Campina Grande',
+    en: 'UFCG - Federal University of Campina Grande',
     pt: 'UFCG - Universidade Federal de Campina Grande'
   },
   education: {

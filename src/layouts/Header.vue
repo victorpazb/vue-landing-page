@@ -65,8 +65,8 @@
             contacts: { en: 'Contacts', pt: 'Contatos' }
         },
         cv_url: {
-            en: "https://drive.usercontent.google.com/u/0/uc?id=1EuXmgvmlYJtjhFf3juslDwwQQurGCChp&export=download",
-            pt: "https://drive.usercontent.google.com/uc?id=1qefxBOAay1-GZInZTPo-F6oaohAdWqSV&export=download"
+            en: `${import.meta.env.BASE_URL}images/CV_EN.pdf`,
+            pt: `${import.meta.env.BASE_URL}images/CV_PT.pdf`
         }
     });
 

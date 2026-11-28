@@ -54,8 +54,8 @@ const content = ref({
     job_3: {
         company: 'Accenture',
         role: {
-            en: 'System Developer Associate',
-            pt: 'Desenvolvedor de Sistemas',
+            en: 'System Developer Associate (Junior)',
+            pt: 'Desenvolvedor de Sistemas Júnior',
         },
         description: {
             en: 'Currently, I work as a Systems Developer at Accenture, where I create automation solutions in Python with the goal of reducing manual effort for clients. My work involves tools like Elasticsearch and Zabbix, as well as the use of artificial intelligence to enhance automation efficiency, scalability, and maintainability.',    
@@ -65,12 +65,31 @@ const content = ref({
         period: {
             start: 'Jan, 2025',
             end: {
-                en: 'Current',
-                pt: 'Atualmente',
+                en: 'May, 2025',
+                pt: 'Mai, 2025',
             },
         }
         
+    },
+    job_4: {
+      company: 'Accenture',
+      role: {
+        en: 'System Developer Analyst (Mid-level)',
+        pt: 'Desenvolvedor de Sistemas Pleno',
+      },
+      description: {
+        en: 'Development of Python-based automation and end-to-end observability solutions for large-scale hybrid cloud environments. Design and implementation of automated reporting, monitoring, metrics, alerts, and dashboards, improving operational efficiency and system reliability. Active contribution to architectural decisions, independent troubleshooting of critical production issues, and technical guidance for senior professionals on proprietary observability platforms.',
+        pt: 'Desenvolvimento de automações em Python e soluções de observabilidade ponta a ponta para ambientes de nuvem híbrida em larga escala. Concepção e implementação de relatórios automatizados, monitoramento, métricas, alertas e dashboards, promovendo eficiência operacional e confiabilidade dos sistemas. Participação ativa em decisões arquiteturais, resolução autônoma de falhas críticas em produção e orientação técnica de profissionais seniores no uso de plataformas proprietárias de observabilidade.'
+      },
+      period: {
+        start: 'May, 2026',
+        end: {
+          en: 'Present',
+          pt: 'Atualmente',
+        },
+      }
     }
+
 });
 
 const selectedLang = computed(() => {
@@ -93,19 +112,32 @@ onMounted(()=>{
             <div class="w-4/5 md:w-3/5 mx-auto">
                 <h2 class="mb-10 text-3xl md:text-4xl font-theme-heading font-medium text-center">{{ content.title[selectedLang] }}</h2>
 
-                <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
-                    <a href="https://flextogether.com/">
-                        <img src="/images/flextogether_logo.jpeg" alt="FT_logo" class="rounded-lg w-16">
-                    </a>
-                    <div>
-                        <h2 class="text-lg font-semibold">{{ `${content.job_1.company} - ${content.job_1.role[selectedLang]}` }}</h2>
-                        <h3 class="text-sm text-gray-500">{{ `${content.job_1.period.start} - ${content.job_1.period.end[selectedLang]}` }}</h3>
-                        <p class="text-black text-lg font-theme-content mt-7">{{ content.job_1.description[selectedLang] }}</p>
-                    </div>
+
+              <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
+                <a href="https://accenture.com/">
+                  <img src="/images/accenturebrasil_logo.jpeg" alt="FT_logo" class="rounded-lg w-16">
+                </a>
+                <div>
+                  <h2 class="text-lg font-semibold">{{ `${content.job_4.company} - ${content.job_4.role[selectedLang]}` }}</h2>
+                  <h3 class="text-sm text-gray-500">{{ `${content.job_4.period.start} - ${content.job_4.period.end[selectedLang]}` }}</h3>
+                  <p class="text-black text-lg font-theme-content mt-7">{{ content.job_4.description[selectedLang] }}</p>
                 </div>
+              </div>
 
+              <div class="line"></div>
 
-                <div class="line"></div>
+              <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
+                <a href="https://accenture.com/">
+                  <img src="/images/accenturebrasil_logo.jpeg" alt="FT_logo" class="rounded-lg w-16">
+                </a>
+                <div>
+                  <h2 class="text-lg font-semibold">{{ `${content.job_3.company} - ${content.job_3.role[selectedLang]}` }}</h2>
+                  <h3 class="text-sm text-gray-500">{{ `${content.job_3.period.start} - ${content.job_3.period.end[selectedLang]}` }}</h3>
+                  <p class="text-black text-lg font-theme-content mt-7">{{ content.job_3.description[selectedLang] }}</p>
+                </div>
+              </div>
+
+              <div class="line"></div>
 
                 <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
                     <a href="https://flextogether.com/">
@@ -118,20 +150,18 @@ onMounted(()=>{
                     </div>
                 </div>
 
-                <div class="line"></div>
+              <div class="line"></div>
 
-                <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
-                    <a href="https://accenture.com/">
-                        <img src="/images/accenturebrasil_logo.jpeg" alt="FT_logo" class="rounded-lg w-16">
+              <div class="section grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <a href="https://flextogether.com/">
+                      <img src="/images/flextogether_logo.jpeg" alt="FT_logo" class="rounded-lg w-16">
                     </a>
                     <div>
-                        <h2 class="text-lg font-semibold">{{ `${content.job_3.company} - ${content.job_3.role[selectedLang]}` }}</h2>
-                        <h3 class="text-sm text-gray-500">{{ `${content.job_3.period.start} - ${content.job_3.period.end[selectedLang]}` }}</h3>
-                        <p class="text-black text-lg font-theme-content mt-7">{{ content.job_3.description[selectedLang] }}</p>
+                         <h2 class="text-lg font-semibold">{{ `${content.job_1.company} - ${content.job_1.role[selectedLang]}` }}</h2>
+                         <h3 class="text-sm text-gray-500">{{ `${content.job_1.period.start} - ${content.job_1.period.end[selectedLang]}` }}</h3>
+                          <p class="text-black text-lg font-theme-content mt-7">{{ content.job_1.description[selectedLang] }}</p>
                     </div>
                 </div>
-
-                
                
             </div>
             

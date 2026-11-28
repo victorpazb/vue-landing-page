@@ -46,12 +46,13 @@ const selectedLang = computed(() => {
 
 const content = ref({
     titles: {
-        pt: ['Cientista da computação', 'Desenvolvedor de Software Fullstack'],
-        en: [ 'Computer Scientist', 'Fullstack software developer'],
-    },  
+        pt: ['Cientista da computação @UFCG', 'Egenheiro de Software Fullstack'],
+        en: [ 'Computer Scientist @UFCG', 'Fullstack software engenieer'],
+    },
     description: {
-        pt: 'Sou bacharel em Ciência da Computação, com mais de 3 anos de experiência de mercado, e atualmente trabalho como Desenvolvedor de Sistemas em uma multinacional. Atuo na criação de automações em Python, com foco em otimizar processos e facilitar o dia a dia das operações dos nossos clientes. Além das automações, trabalhamos com ferramentas de inteligência artificial que ampliam a eficiência das soluções, simplificam sua construção e manutenção, e aumentam suas possibilidades de uso. Tenho paixão por resolver problemas de forma inteligente, colaborando com equipes e mantendo sempre uma atitude positiva.',
-        en: 'I hold a bachelor’s degree in Computer Science, with over 3 years of industry experience, and currently work as a Systems Developer at a multinational company. I develop Python-based automations aimed at streamlining processes and improving the operational efficiency for our clients. Our work also involves AI tools that enhance the performance of our solutions, simplify their development and maintenance, and expand their use cases. I’m passionate about solving problems intelligently, working collaboratively, and maintaining a positive attitude.'
+      pt: 'Sou Engenheiro de Software Pleno, bacharel em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG), com mais de três anos de experiência profissional. Atualmente, atuo em uma multinacional de consultoria, desenvolvendo soluções de automação e observabilidade para ambientes de nuvem híbrida em larga escala. Minha experiência combina desenvolvimento backend e fullstack, integração de sistemas, computação em nuvem e participação em decisões de arquitetura. Tenho como diferencial a capacidade de conectar desenvolvimento de software e infraestrutura, construindo soluções confiáveis, escaláveis e sustentáveis. Acredito no uso estratégico da inteligência artificial como ferramenta para potencializar a produtividade, sem abrir mão da qualidade técnica e das boas práticas de engenharia de software.',
+
+      en: 'I am a Mid-level Software Engineer with a bachelor’s degree in Computer Science from the Federal University of Campina Grande (UFCG) and over three years of professional experience. I currently work at a multinational consulting company, developing automation and observability solutions for large-scale hybrid cloud environments. My background combines backend and fullstack development, system integration, cloud computing, and contributions to architectural decisions. My key strength lies in bridging software development and infrastructure to build reliable, scalable, and sustainable solutions. I believe in the strategic use of artificial intelligence to enhance productivity while maintaining technical quality and software engineering best practices.'
     }
 });
 
